@@ -86,7 +86,7 @@ full_user_api_model = Model(
         "is_email_verified": fields.Boolean(
             required=True, description="User email verification status"
         ),
-        "email_verification_date": fields.DateTime(
+        "email_verification_date": fields.Float(
             required=False, description="User email verification date"
         ),
         "bio": fields.String(required=False, description="User bio"),
